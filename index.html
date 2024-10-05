@@ -1,0 +1,247 @@
+<!-<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Match Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 class="page-title">Card Match Game</h1>
+  <div class="game-info-container">
+    <div class="game-info">Flips: <span id="flips">0</span></div>
+    <div class="game-info">Matches: <span id="matches">0</span></div>
+  </div>
+
+  <div class="card-container">
+
+    <div class="card" data-card="1" id="card1">
+      <div class="front">
+        <img src="Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">River Droughts</h2>
+        <img src="Assets/Images/desert.jpg" alt="Back Card Image"
+          class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="1" id="card2">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">ICe Melting</h2>
+        <img src="Assets/Images/WhatsApp Image 2024-10-04 at 16.03.10_6a5f450f.jpg" alt="Back Card Image"
+          class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="2" id="card3">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Air Transport</h2>
+        <img src=" Assets/Images/3.jpg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="2" id="card4">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Environmental Degradation</h2>
+        <img src=" Assets/Images/4.jpg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="3" id="card5">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Tree Cutting</h2>
+        <img src=" Assets/Images/5.jpg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="3" id="card6">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Waste Production</h2>
+        <img src=" Assets/Images/6.jpeg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="4" id="card7">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Overconsumption</h2>
+        <img src=" Assets/Images/over.jpg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="4" id="card8">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Forest Fires</h2>
+        <img src=" Assets/Images/034158b5-eee8-4ea0-9ff9-ae73dcf580e5.jpeg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="5" id="card9">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Factory Emissions</h2>
+        <img src=" Assets/Images/9.jpeg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="5" id="card10">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Car Exhaust</h2>
+        <img src=" Assets/Images/car1.jpeg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="6" id="card11">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Animal Farming</h2>
+        <img src=" Assets/Images/af.jpg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="6" id="card12">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Methane Emissions</h2>
+        <img src=" Assets/Images/methane.jpg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="7" id="card13">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Rising Temperatures</h2>
+        <img src=" Assets/Images/ris.jpg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="7" id="card14">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Sea Level</h2>
+        <img src=" Assets/Images/Increase the level of the sea line.jpeg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="8" id="card15">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Oxygen Decline</h2>
+        <img src=" Assets/Images/ox.jpg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+
+    <div class="card" data-card="8" id="card16">
+      <div class="front">
+        <img src=" Assets/Images/WhatsApp Image 2024-10-04 at 16.03.11_af9c9038.jpg" alt="Front Card Image"
+          class="card-image">
+      </div>
+      <div class="back">
+        <h2 class="card-title">Air Pollution</h2>
+        <img src=" Assets/Images/air.jpeg" alt="Back Card Image" class="card-image">
+      </div>
+    </div>
+  </div>
+
+  
+
+    
+      
+
+
+      <div class="solution-container">
+        <h2>Solution</h2>
+        <p>
+          Imagine our planet is a big house. We live here with all the animals and plants. But there's a problem: the house is
+          getting too hot!
+        
+          Why is it getting hot?
+        
+          It's because we're using too much energy from things like coal and oil. When we burn these, they release a gas called
+          carbon dioxide (CO2). This gas is like a blanket around the Earth, making it warmer.
+        
+          How can we make the house cooler?
+        
+          Switch to green energy: Instead of using coal and oil, we can use energy from the sun, wind, and water. This is like
+          turning on a fan to cool down the house.
+          Save energy: We can turn off lights when we leave a room and take shorter showers. This is like closing the windows to
+          keep the heat out.
+          Plant trees: Trees help to clean the air by sucking up CO2. Planting more trees is like opening a window to let fresh
+          air in.
+          Recycle and reduce waste: When we throw away trash, it can release a gas called methane, which is also bad for the
+          planet. Recycling and reducing waste is like cleaning up the mess in our house.
+          Can you help?
+        
+          You can help by doing small things like turning off lights and using less water. You can also plant trees and recycle.
+          Together, we can make our planet a cooler and healthier place to live!
+        </p>
+        <img src=" Assets/Images/nasa.jpg" alt="">
+      </div>
+
+
+    
+    
+
+  
+
+
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
